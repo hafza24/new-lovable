@@ -1,0 +1,23 @@
+psutil>=5.9.8
+pywin32>=306; platform_system == "Windows"
+pyinstaller>=6.5.0
+wmi>=1.5.1; platform_system == "Windows"
+PyQt6>=6.6.1
+qasync>=0.27.1
+requests>=2.31.0
+aiohttp>=3.9.3
+websockets>=12.0
+websocket-client>=1.7.0
+watchdog>=4.0.0
+pynput>=1.7.6
+pyautogui>=0.9.54
+cryptography>=42.0.5
+opencv-python>=4.9.0.80
+pillow>=10.2.0
+mss>=9.0.1
+python-dotenv>=1.0.1
+schedule>=1.2.1
+pystray>=0.19.5
+pycryptodome>=3.20.0
+certifi>=2024.2.2
+packaging>=24.0
