@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "organization_id": "replace-with-org-id",
+  "pairing_code": "replace-with-pairing-code",
+  "registration_url": "https://console.example.com/api/devices/register",
+  "firewall_ports": [443],
+  "files": [
+    {
+      "source": "build/Agent/sentinel_agent.exe",
+      "destination": "Agent/sentinel_agent.exe",
+      "sha256": "replace-with-sha256",
+      "required": true
+    },
+    {
+      "source": "build/Tray/sentinel_tray.exe",
+      "destination": "Tray/sentinel_tray.exe",
+      "sha256": "replace-with-sha256",
+      "required": true
+    },
+    {
+      "source": "build/Watchdog/sentinel_watchdog.exe",
+      "destination": "Watchdog/sentinel_watchdog.exe",
+      "sha256": "replace-with-sha256",
+      "required": true
+    }
+  ]
+}
