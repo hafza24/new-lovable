@@ -1,0 +1,45 @@
+{
+  "server": {
+    "base_url": "https://admin.sentinel-net.local",
+    "websocket_url": "wss://admin.sentinel-net.local/ws/endpoint",
+    "tenant_id": "CHANGE_ME",
+    "registration_token": "CHANGE_ME",
+    "tls_verify": true,
+    "heartbeat_seconds": 30,
+    "sync_seconds": 60,
+    "retry_initial_seconds": 2,
+    "retry_max_seconds": 120
+  },
+  "agent": {
+    "device_alias": "",
+    "log_level": "INFO",
+    "offline_queue_limit": 10000,
+    "process_sample_limit": 300,
+    "app_inventory_interval_minutes": 360,
+    "integrity_interval_minutes": 15,
+    "allow_remote_shutdown": false,
+    "allow_remote_restart": false,
+    "allow_remote_command": false,
+    "allowed_commands": ["whoami", "hostname", "ipconfig", "systeminfo", "tasklist"],
+    "require_interactive_consent_for_streaming": true
+  },
+  "paths": {
+    "program_data": "%ProgramData%\\SentinelNet",
+    "logs": "%ProgramData%\\SentinelNet\\logs",
+    "database": "%ProgramData%\\SentinelNet\\state\\sentinel.db",
+    "device_id": "%ProgramData%\\SentinelNet\\config\\device.id",
+    "local_config": "%ProgramData%\\SentinelNet\\config\\client.json",
+    "integrity_manifest": "%ProgramData%\\SentinelNet\\config\\manifest.json",
+    "consent_file": "%ProgramData%\\SentinelNet\\config\\interactive-consent.json"
+  },
+  "features": {
+    "screen_stream": false,
+    "camera_stream": false,
+    "clipboard_sync": false,
+    "file_explorer": false,
+    "terminal": false,
+    "browser_history_inventory": false,
+    "usb_monitoring": true,
+    "startup_inventory": true
+  }
+}
